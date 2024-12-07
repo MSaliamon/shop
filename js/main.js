@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
      try {
          const response = await fetch('https://dummyjson.com/products/search?q=phone');
          const data = await response.json();
-         productsArr = data.products; // Change this line
+         productsArr = data.products; 
          return data;
      } catch (error) {
          console.log(error);
